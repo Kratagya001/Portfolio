@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-k"></i>
+                    <div class="logo-text">Kratagya Sharma</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="https://t3.ftcdn.net/jpg/04/66/39/10/360_F_466391068_Gh3du960FKmzUemPEI9zPwKpNcc0fGRN.jpg">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">AI Engineer</span></h5>
+                    <h1>Kratagya Sharma</h1>
+                    <p> - Space Company Vision: Currently building a roadmap toward founding a future space-tech company.
+                        - Productivity & Self-Development: Follows a structured, holistic daily routine.
+                        - Time Optimization: Reduced social media usage to maximize learning and mental well-being.
+                        Aerospace and Space Technology, Quantum Computing and AI, Economics, Mindfulness, Exploring science and tech spaces
+                        A highly motivated and curious learner with a strong passion for aerospace, artificial intelligence, physics, and
+economics. Actively building a foundation through self-directed learning, open-source courses, and hands-on projects. Looking to collaborate, contribute, and grow in knowledge-driven environments.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="/home/kratagyaa/Documents/Portfolio/assets/Kratagya_Sharma CV.pdf" target="_blank" download class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100027033580452&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kratagya-sharma-48909a318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/grateful_believers?igsh=bWt3cmcxZTRqMml5" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/Kratagya001?t=fK52KbS5LeBEGl-7tmbkoQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Kratagya001" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["AI/ML Engineer","Quantum AI Engineer","CEO & CFO","Senior Software Developer"],
+            typedSpeed:70,
+            backSpeed:60,
+            loop:true
+        })
+     </script>
+</body>
+</html>
