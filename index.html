@@ -2,84 +2,289 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Kratagya Sharma - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!----Font awesome cdn  font icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
-     <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-k"></i>
-                    <div class="logo-text">Kratagya Sharma</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                 <div class="hero-pic">
-                    <img src="https://t3.ftcdn.net/jpg/04/66/39/10/360_F_466391068_Gh3du960FKmzUemPEI9zPwKpNcc0fGRN.jpg">
-                 </div>
-                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">AI Engineer</span></h5>
-                    <h1>Kratagya Sharma</h1>
-                    <p> - Space Company Vision: Currently building a roadmap toward founding a future space-tech company.
-                        - Productivity & Self-Development: Follows a structured, holistic daily routine.
-                        - Time Optimization: Reduced social media usage to maximize learning and mental well-being.
-                        Aerospace and Space Technology, Quantum Computing and AI, Economics, Mindfulness, Exploring science and tech spaces
-                        A highly motivated and curious learner with a strong passion for aerospace, artificial intelligence, physics, and
-economics. Actively building a foundation through self-directed learning, open-source courses, and hands-on projects. Looking to collaborate, contribute, and grow in knowledge-driven environments.
-                    </p>
-
-                    <div class="btn-group">
-                       <a href="/home/kratagyaa/Documents/Portfolio/assets/Kratagya_Sharma CV.pdf" target="_blank" download class="btn active">Download CV</a>
-                       <a href="#" class="btn">Contact</a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.facebook.com/profile.php?id=100027033580452&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/kratagya-sharma-48909a318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/grateful_believers?igsh=bWt3cmcxZTRqMml5" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://x.com/Kratagya001?t=fK52KbS5LeBEGl-7tmbkoQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://github.com/Kratagya001" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                 </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-initial">K</span>
+                <span class="logo-text">Kratagya</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-     </div>
-     <!---typed js for typing text effect-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script>
-        /** creating button click show hide navbar **/
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
+    </nav>
 
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Kratagya Sharma</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Building for the future — learning, evolving, and coding every day.
+                </p>
+                
+                <!-- Age and Birthday Countdown -->
+                <div class="age-birthday-container">
+                    <div class="age-display">
+                        <span class="age-label">Current Age:</span>
+                        <span class="age-value" id="current-age">16</span>
+                    </div>
+                    
+                    <div class="birthday-countdown">
+                        <h3>Next Birthday In:</h3>
+                        <div class="countdown-display">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">0</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">0</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">0</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">0</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+    </section>
 
-        var typed=new Typed(".input",{
-            strings:["AI/ML Engineer","Quantum AI Engineer","CEO & CFO","Senior Software Developer"],
-            typedSpeed:70,
-            backSpeed:60,
-            loop:true
-        })
-     </script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        A curious mind born in 2007, currently diving deep into computer science, AI, and system-level innovation. 
+                        I'm passionate about turning complex tech into meaningful solutions.
+                    </p>
+                </div>
+                
+                <!-- Timeline -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Started Python Journey</h4>
+                            <p>Began exploring programming with Python, diving into fundamentals and problem-solving</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>AI & Machine Learning</h4>
+                            <p>Discovered the power of AI and started learning machine learning concepts and applications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Computer Science Deep Dive</h4>
+                            <p>Expanded knowledge in algorithms, data structures, and system-level programming</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Entrepreneurial Journey</h4>
+                            <p>Started building real-world solutions and exploring the intersection of technology and business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i data-lucide="shopping-bag"></i>
+                    </div>
+                    <h3>InHide - E-commerce Platform</h3>
+                    <p>Premium leather products e-commerce platform with modern design and seamless user experience.</p>
+                    <div class="project-links">
+                        <a href="https://inhide.in" target="_blank" class="project-link">
+                            <i data-lucide="external-link"></i>
+                            inhide.in
+                        </a>
+                        <a href="https://inhide.store" target="_blank" class="project-link">
+                            <i data-lucide="external-link"></i>
+                            inhide.store
+                        </a>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">E-commerce</span>
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">SEO</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i data-lucide="github"></i>
+                    </div>
+                    <h3>GitHub Projects</h3>
+                    <p>Various open-source projects and contributions showcasing different technologies and problem-solving approaches.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Kratagya001" target="_blank" class="project-link">
+                            <i data-lucide="external-link"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Open Source</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Advanced programming and automation</p>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>AI/ML</h3>
+                    <p>Machine learning and artificial intelligence</p>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>Neuromorphic Computing</h3>
+                    <p>Concepts and emerging technologies</p>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern web technologies and frameworks</p>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>SEO</h3>
+                    <p>Search engine optimization and analytics</p>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Platform development and optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kratagya-sharma-48909a318" target="_blank" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://x.com/Kratagya001" target="_blank" class="social-link">
+                    <i data-lucide="twitter"></i>
+                    <span>X (Twitter)</span>
+                </a>
+                <a href="https://github.com/Kratagya001" target="_blank" class="social-link">
+                    <i data-lucide="github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Moving Quotes -->
+    <footer class="footer">
+        <div class="quotes-container">
+            <div class="quote-slide">
+                <p>"Learning faster than I fail. Evolving every single day."</p>
+            </div>
+            <div class="quote-slide">
+                <p>"Discipline at dawn, dreams by dusk — I rise early to stay ahead of time."</p>
+            </div>
+            <div class="quote-slide">
+                <p>"In a world of noise, I chose clarity. In a world of comfort, I chose growth."</p>
+            </div>
+            <div class="quote-slide">
+                <p>"I'm not here to prove myself fast — I'm here to become undeniable."</p>
+            </div>
+            <div class="quote-slide">
+                <p>"The path I walk is mine alone — forged by curiosity, built with consistency."</p>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2024 Kratagya Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
