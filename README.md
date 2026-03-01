@@ -3,6 +3,8 @@
 Welcome to my personal portfolio repository. 🌐✨
 This website represents my journey as a Computer Science student focused on Artificial Intelligence 🤖, deep tech 🧠⚙️, and future-driven innovation 🚀🌌.
 
+#### 🔗 Website: https://ks-portfolio01.lovable.app/
+
 ## 👨‍💻 About Me
 
 I’m a Computer Science student exploring Artificial Intelligence from first principles 🧩 while building a strong foundation in machine learning 📊, systems thinking 🧠, and emerging technologies ⚡.
